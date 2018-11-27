@@ -1,5 +1,7 @@
 # Using Google Cloud Composer with a Cloud Dataproc job
-Simple example that sets up dataproc cluster, runs pyspark (csv2parquet converstion) and deletes cluster
+Simple example that sets up dataproc cluster, runs pyspark (csv2parquet converstion) and deletes cluster. 
+
+First look at the Cloud Composer Quickstart for setup: https://cloud.google.com/composer/docs/quickstart
 
 convert.py - simple converstion of a test csv file sitting in GCS (to test that code works) 
 upload file it to GCS and reference it in the DAG
