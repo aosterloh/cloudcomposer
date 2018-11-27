@@ -1,7 +1,8 @@
 # playing with cloud composer
 small example that sets up dataproc cluster, runs pyspark (csv2parquet converstion) and deletes cluster
 
-convert.py - simple converstion of a test csv file sitting in GCS
+convert.py - simple converstion of a test csv file sitting in GCS (to test that code works) 
+- upload it to GCS and reference it in the DAG
 
 cc-convert4.py - defines a DAG that creates dataproc cluster, runs conversion and deletes cluster
 
