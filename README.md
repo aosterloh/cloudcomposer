@@ -3,9 +3,14 @@ small example that sets up dataproc cluster, runs pyspark (csv2parquet conversti
 
 convert.py - simple converstion of a test csv file sitting in GCS (to test that code works) 
 - upload it to GCS and reference it in the DAG
+- 
 
 cc-convert4.py - defines a DAG that creates dataproc cluster, runs conversion and deletes cluster
-
+    run_dataproc_csv2parquet = dataproc_operator.DataProcPySparkOperator(
+        task_id='run_dataproc_parquetconvert',
+        cluster_name='parquetconverter2',
+        main='gs://alex-code/convert.py')
+        
 
 
 ### csv file in my case has 9 columns and looks like this
